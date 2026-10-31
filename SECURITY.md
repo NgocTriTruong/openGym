@@ -19,7 +19,7 @@ git pull && docker compose pull && docker compose up -d
 ## Reporting a vulnerability
 
 Use GitHub's private vulnerability reporting:
-<https://github.com/DuarteSantos8/openGym/security/advisories/new>. The report is visible only to
+<https://github.com/NgocTriTruong/openGym/security/advisories/new>. The report is visible only to
 you and the maintainer, and it becomes the advisory thread where the fix is discussed and, once
 released, published.
 
@@ -35,11 +35,7 @@ Useful in a report: the version or commit, whether you're running the prebuilt i
 source build, your `RP_ID`/`ORIGIN` and what sits in front of the app, steps to reproduce, and
 what an attacker gets out of it.
 
-**On response times:** this is a hobby project maintained by one person alongside school. There
-is no SLA and no bounty. Expect days rather than hours, and longer during exam periods. If a
-week goes by with no reply, comment on the advisory thread. It's more likely to be a missed
-notification than a decision. If a report goes unfixed and you want to disclose publicly, say so
-in the thread; there's no objection, and no request to sit on it indefinitely.
+**On response times:** There is no SLA and no bounty. If a week goes by with no reply, comment on the advisory thread. If a report goes unfixed and you want to disclose publicly, say so in the thread.
 
 ## In scope
 
@@ -57,8 +53,8 @@ in the thread; there's no objection, and no request to sit on it indefinitely.
   change a signed-in user's data.
 - **Shipped deployment config**: `docker-compose.yml`, `web/nginx.conf.template`, the two Dockerfiles:
   a default that exposes something a self-hoster wouldn't expect to be exposed.
-- **The published images** `registry.gitlab.com/duartesantos8/opengym/{api,web}` and
-  `ghcr.io/duartesantos8/opengym-{api,web}`.
+- **The published images** `registry.gitlab.com/ngoctritruong/opengym/{api,web}` and
+  `ghcr.io/ngoctritruong/opengym-{api,web}`.
 - **The phone apps** (Android APK and Google Play, the iPhone app with its Apple Watch app and
   widgets): getting the pairing token or a Coach API key out of the phone's secure storage
   (Android Keystore, iOS Keychain), another app or a web page reaching into openGym's data, or the

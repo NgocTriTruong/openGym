@@ -11,7 +11,7 @@ Version numbers follow the release rule, not the size of the change: the next re
 published one plus one patch (1.4.2 → 1.4.3), and a minor bump is saved for a step as big as the
 new exercise database (v1.4.0).
 
-- Milestones: https://github.com/DuarteSantos8/openGym/milestones
+- Milestones: https://github.com/NgocTriTruong/openGym/milestones
 - Next, in order: programmes, tour & fixes (v1.4.4) → Google Play, F-Droid & integrations (v1.4.5) →
   Wear OS & Health Connect (v1.4.6) → the progression engine & circuits (v1.4.7) → the list after that
 

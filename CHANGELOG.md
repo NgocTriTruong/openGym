@@ -1331,7 +1331,7 @@ tab bar mid-screen during a workout. Web bundle, APK and API image.
   pick one Chat Completions refuses with a 400 or a 404. Compatible endpoints (Ollama, LM Studio,
   OpenRouter) stay unfiltered. The Gemini key field also names the new `AQ.` key prefix.
 - **openGym is back on GitHub, and GitHub is home again.** The account suspension that took
-  `github.com/DuarteSantos8/openGym` offline on 2026-08-19 is lifted. Everything that happened on
+  `github.com/NgocTriTruong/openGym` offline on 2026-08-19 is lifted. Everything that happened on
   GitLab in the meantime is there again: history, tags, the releases v1.2.9 to v1.3.5 with their
   APKs, the GHCR images and the GitHub Pages demo. GitLab is now a mirror, pushed by a GitHub
   Actions workflow on every push to `main` and every `v*` tag; it keeps running the CI that builds
@@ -1966,11 +1966,11 @@ since the GitHub account went.
 
 ### openGym moved to GitLab
 
-- **<https://gitlab.com/DuarteSantos8/opengym>** is the home of the project. Same history,
+- **<https://gitlab.com/NgocTriTruong/openGym>** is the home of the project. Same history,
   same tags, same AGPL. gitea.com was the stopgap after the GitHub suspension and stays as a
   mirror; it never had a CI runner, which is why releases there had no images.
 - **Prebuilt images are back.** `docker compose pull` now fetches
-  `registry.gitlab.com/duartesantos8/opengym/api` and `/web`, built for **amd64 and arm64** on
+  `registry.gitlab.com/ngoctritruong/opengym/api` and `/web`, built for **amd64 and arm64** on
   every release. Pulling is anonymous — the project is public, no login, no token.
 - **The APK is built by CI now, not by hand.** Every `vX.Y.Z` tag produces a `zipalign`ed,
   signed APK, attached to the GitLab release and mirrored onto the download page. The signing
@@ -2078,36 +2078,36 @@ behave: pair them as you go, rest once per round, and drop an exercise you have 
 - **A per-muscle exercise breakdown** behind the muscle card — estimated 1RM per exercise, decay
   bars, and primary/secondary tags, with a best-weight fallback for holds and carries that have no
   reps to work from. Contributed by [@Space-Hermes](https://github.com/Space-Hermes) in
-  [#92](https://github.com/DuarteSantos8/openGym/pull/92),
-  [#93](https://github.com/DuarteSantos8/openGym/pull/93) and
-  [#94](https://github.com/DuarteSantos8/openGym/pull/94).
+  [#92](https://github.com/NgocTriTruong/openGym/pull/92),
+  [#93](https://github.com/NgocTriTruong/openGym/pull/93) and
+  [#94](https://github.com/NgocTriTruong/openGym/pull/94).
 - **Fatigue is now intensity-weighted**, not volume alone: a set counts for more the closer it is
   to your estimated maximum. It also reads against a stable historical reference, so fatigue can no
   longer *rise* across a rest week, and bodyweight movements no longer register as zero load. A
   property probe over 108,000 comparisons runs in CI to keep it that way. Contributed by
   [@Space-Hermes](https://github.com/Space-Hermes) in
-  [#55](https://github.com/DuarteSantos8/openGym/pull/55).
+  [#55](https://github.com/NgocTriTruong/openGym/pull/55).
 
 ### In a session
 
 - **Supersets advance properly.** Completing a set moves to the next member of the group, the
   active exercise scrolls into view, and rest starts once the whole round is done rather than after
   each set. Contributed by [@Space-Hermes](https://github.com/Space-Hermes) in
-  [#80](https://github.com/DuarteSantos8/openGym/pull/80).
+  [#80](https://github.com/NgocTriTruong/openGym/pull/80).
 - **Remove an exercise from a running session**, with a superset-aware picker and a confirmation.
   Contributed by [@Space-Hermes](https://github.com/Space-Hermes) in
-  [#83](https://github.com/DuarteSantos8/openGym/pull/83).
+  [#83](https://github.com/NgocTriTruong/openGym/pull/83).
 - **The Android back button closes the open sheet** instead of leaving the screen or the app
   ([#63]). Each open sheet gets its own history entry, so stacked sheets unwind one at a time.
   Contributed by [@Space-Hermes](https://github.com/Space-Hermes) in
-  [#85](https://github.com/DuarteSantos8/openGym/pull/85).
+  [#85](https://github.com/NgocTriTruong/openGym/pull/85).
 
 ### Self-hosting
 
 - **The API service no longer has to be called `api`** ([#99]). The web image builds its nginx
   config at startup from `BACKEND`, `PORT` and `NGINX_PORT`, all defaulted to today's values, so
   existing compose files are unaffected. Reported and fixed by
-  [@GAS85](https://github.com/GAS85) in [#100](https://github.com/DuarteSantos8/openGym/pull/100).
+  [@GAS85](https://github.com/GAS85) in [#100](https://github.com/NgocTriTruong/openGym/pull/100).
 - **…and the shipped `docker-compose.yml` now actually passes those through.** The `web` service
   had no environment of its own and published a hardcoded `:80`, so setting `BACKEND` or
   `NGINX_PORT` in `.env` did nothing at all on the stock stack — the setting existed, the wiring
@@ -2116,7 +2116,7 @@ behave: pair them as you go, rest once per round, and drop an exercise you have 
   as before.
 - **Health checks and OCI image labels** on both images — source, licence, version, revision and
   build date, so image tooling can tell what it is holding. Contributed by
-  [@GAS85](https://github.com/GAS85) in [#98](https://github.com/DuarteSantos8/openGym/pull/98).
+  [@GAS85](https://github.com/GAS85) in [#98](https://github.com/NgocTriTruong/openGym/pull/98).
 - **Images are published from a release, not from any tag** ([#87]). A tag that gets consolidated
   away before it becomes a release used to leave its image tags behind in the registry, where
   dependency bots read them as newer versions.
@@ -2127,9 +2127,9 @@ behave: pair them as you go, rest once per round, and drop an exercise you have 
   places still read the older boolean, so warm-ups from FitNotes/Strong/Hevy history inflated set
   counts, progression and the fatigue map.
 
-[#63]: https://github.com/DuarteSantos8/openGym/issues/63
-[#87]: https://github.com/DuarteSantos8/openGym/issues/87
-[#99]: https://github.com/DuarteSantos8/openGym/issues/99
+[#63]: https://github.com/NgocTriTruong/openGym/issues/63
+[#87]: https://github.com/NgocTriTruong/openGym/issues/87
+[#99]: https://github.com/NgocTriTruong/openGym/issues/99
 
 ## v1.2.6 (2026-08-11)
 
@@ -2203,7 +2203,7 @@ account.
   reads from history instead.
 
 Contributed by [@Space-Hermes](https://github.com/Space-Hermes) in
-[#50](https://github.com/DuarteSantos8/openGym/pull/50).
+[#50](https://github.com/NgocTriTruong/openGym/pull/50).
 
 ### Pair exercises into a superset mid-session (#64)
 
@@ -2218,7 +2218,7 @@ Contributed by [@Space-Hermes](https://github.com/Space-Hermes) in
 - Session-only by design: pairings drive the workout, and history stores the sets.
 
 Contributed by [@Space-Hermes](https://github.com/Space-Hermes) in
-[#64](https://github.com/DuarteSantos8/openGym/pull/64).
+[#64](https://github.com/NgocTriTruong/openGym/pull/64).
 
 ### The muscle map stops rewriting the catalogue (#67)
 
@@ -2230,7 +2230,7 @@ Contributed by [@Space-Hermes](https://github.com/Space-Hermes) in
   they always did.
 
 Contributed by [@Space-Hermes](https://github.com/Space-Hermes) in
-[#67](https://github.com/DuarteSantos8/openGym/pull/67).
+[#67](https://github.com/NgocTriTruong/openGym/pull/67).
 
 ### Fixes
 
@@ -2251,9 +2251,9 @@ Contributed by [@Space-Hermes](https://github.com/Space-Hermes) in
 - Documented that `VITE_IMG_BASE` / `VITE_GIF_BASE` are build-time values, so setting them next to
   `docker compose` does nothing on a prebuilt image.
 
-[#79]: https://github.com/DuarteSantos8/openGym/issues/79
-[#74]: https://github.com/DuarteSantos8/openGym/issues/74
-[#60]: https://github.com/DuarteSantos8/openGym/pull/60
+[#79]: https://github.com/NgocTriTruong/openGym/issues/79
+[#74]: https://github.com/NgocTriTruong/openGym/issues/74
+[#60]: https://github.com/NgocTriTruong/openGym/pull/60
 
 ## v1.2.5 (2026-08-04)
 
@@ -2746,7 +2746,7 @@ Reliability fixes for the push notifications shipped in v1.1.0, found through li
 
 ## v1.1.0 (2026-07-21)
 
-- Prebuilt Docker images published to `ghcr.io/duartesantos8/opengym-{api,web}` (amd64 + arm64)
+- Prebuilt Docker images published to `ghcr.io/ngoctritruong/opengym-{api,web}` (amd64 + arm64)
   via GitHub Actions, so self-hosting no longer requires building from source. `docker compose pull`
   grabs them; `docker compose up -d --build` still builds locally if you'd rather.
 - Push notifications: rest-timer-over alert (fires even if the app is closed) and an optional
