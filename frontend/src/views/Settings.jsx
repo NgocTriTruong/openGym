@@ -967,17 +967,10 @@ export default function Settings({ page = null, find = null, via = null, entryKe
               subtitle={t('Download the APK from opengym.ch')} accessory="chevron"
               onClick={() => window.open('https://opengym.ch/#download', '_blank', 'noopener')} />}
       </Section>
-      {/* Support: the project's own donation pages, and on the iPhone a straight line to writing a
-          review. Plain links, no pop-up asking for anything (App Store 5.6.1). */}
-      <Section title={t('Support openGym')} footer={t('openGym is free: no ads, no subscriptions, no tracking. A coffee keeps it that way.')}>
-        {MOBILE && ios && <Row icon="star" iconTint="var(--orange)" title={t('Rate openGym on the App Store')} accessory="chevron"
-          onClick={() => window.open('https://apps.apple.com/app/id6822275400?action=write-review', '_blank', 'noopener')} />}
-        <Row icon="heart" iconTint="var(--pink)" title={t('Buy me a coffee')} subtitle="Buy Me a Coffee" accessory="chevron"
-          onClick={() => window.open('https://buymeacoffee.com/duartesantos', '_blank', 'noopener')} />
-        <Row icon="heart" iconTint="var(--blue)" title="Ko-fi" accessory="chevron"
-          onClick={() => window.open('https://ko-fi.com/opengym', '_blank', 'noopener')} />
-        <Row icon="heart" iconTint="var(--purple)" title="GitHub Sponsors" accessory="chevron"
-          onClick={() => window.open('https://github.com/sponsors/DuarteSantos8', '_blank', 'noopener')} />
+      {/* Support: Star on GitHub */}
+      <Section title={t('Support openGym')} footer={t('openGym is free: no ads, no subscriptions, no tracking. A star on GitHub keeps it going.')}>
+        <Row icon="star" iconTint="var(--orange)" title={t('Star openGym on GitHub')} accessory="chevron"
+          onClick={() => window.open('https://github.com/NgocTriTruong/openGym', '_blank', 'noopener')} />
       </Section>
       {/* "Add to Home screen": not inside the phone app, and not once it is installed. Safari's
           Share menu only on Apple (an iPad says Macintosh too); Windows and Linux get Chrome's
@@ -992,10 +985,10 @@ export default function Settings({ page = null, find = null, via = null, entryKe
           which build you are running, or whether an update actually installed. */}
       <div className="dim small sp-version">
         openGym v{__APP_VERSION__} · {t('free & open source (AGPL v3)')}<br />
-        <a href="https://github.com/DuarteSantos8/openGym" target="_blank" rel="noopener">{t('Source code')}</a><br />
+        <a href="https://github.com/NgocTriTruong/openGym" target="_blank" rel="noopener">{t('Source code')}</a><br />
         {/* Attribution the media licence asks for word for word (agreement §8c), so it is not translated */}
         Exercise media © Aliaksandr Makatserchyk, <a href="https://gymvisual.com/" target="_blank" rel="noopener">Gym visual</a>, gymvisual.com.
-        Media licensed for use in openGym only; see <a href="https://github.com/DuarteSantos8/openGym/blob/main/NOTICE.md" target="_blank" rel="noopener">NOTICE.md</a>
+        Media licensed for use in openGym only; see <a href="https://github.com/NgocTriTruong/openGym/blob/main/NOTICE.md" target="_blank" rel="noopener">NOTICE.md</a>
       </div>
     </>,
 

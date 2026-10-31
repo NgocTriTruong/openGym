@@ -94,7 +94,7 @@ affinity: {}
 
 api:
   image:
-    repository: ghcr.io/duartesantos8/opengym-api
+    repository: ghcr.io/ngoctritruong/opengym-api
     pullPolicy: IfNotPresent
     tag: 1.4.3               # keep in step with web.image.tag
   service:
@@ -149,7 +149,7 @@ api:
 
 web:
   image:
-    repository: ghcr.io/duartesantos8/opengym-web
+    repository: ghcr.io/ngoctritruong/opengym-web
     pullPolicy: IfNotPresent
     tag: 1.4.3
   service:
