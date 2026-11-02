@@ -8,18 +8,9 @@
 </picture>
 </p>
 
-<a href="https://discord.gg/e62jY6fwVb"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscord.com%2Fapi%2Finvites%2Fe62jY6fwVb%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&suffix=%20members&label=Discord&logo=discord&logoColor=white&style=flat-square&labelColor=0c0e12&color=a3e635" alt="Discord"></a>
-<a href="https://github.com/NgocTriTruong/openGym/stargazers"><img src="https://img.shields.io/github/stars/NgocTriTruong/openGym?logo=github&logoColor=white&label=stars&style=flat-square&labelColor=0c0e12&color=a3e635" alt="Stars"></a>
-<a href="https://github.com/NgocTriTruong/openGym/releases"><img src="https://img.shields.io/github/v/release/NgocTriTruong/openGym?label=release&style=flat-square&labelColor=0c0e12&color=a3e635" alt="Release"></a>
-<a href="https://github.com/NgocTriTruong/openGym/releases"><img src="https://img.shields.io/github/downloads/NgocTriTruong/openGym/total?label=downloads&style=flat-square&labelColor=0c0e12&color=a3e635" alt="Downloads"></a>
-<a href="https://github.com/NgocTriTruong/openGym/actions/workflows/test.yml"><img src="https://img.shields.io/github/actions/workflow/status/NgocTriTruong/openGym/test.yml?branch=main&label=tests&style=flat-square&labelColor=0c0e12&color=a3e635" alt="Tests"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0-a3e635?style=flat-square&labelColor=0c0e12&color=a3e635" alt="AGPL-3.0"></a>
 
-<a href="https://apps.apple.com/app/id6822275400"><img src="website/app-store-badge.svg" alt="Download on the App Store" height="40"></a>
-<a href="https://github.com/NgocTriTruong/openGym/releases/latest"><img src="assets/readme/badge-android.svg" alt="Download the Android APK" height="40"></a>
-<a href="docs/SELF_HOSTING.md"><img src="assets/readme/badge-selfhost.svg" alt="Self-host with Docker" height="40"></a>
 
-[Website](https://opengym.ch) · [Live demo](https://opengym.ch/demo/) · [Roadmap](ROADMAP.md) · [Changelog](CHANGELOG.md)
 
 </div>
 
