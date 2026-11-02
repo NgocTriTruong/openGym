@@ -482,7 +482,6 @@ const html = `<!DOCTYPE html>
 <meta name="description" content="The complete openGym HTTP API, documented as an OpenAPI spec: passkey auth, state sync, push notifications, pairing and admin routes.">
 <meta name="theme-color" content="#000000">
 <meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="preconnect" href="https://stats.duarte-santos.ch">
 <meta property="og:title" content="openGym API reference">
 <meta property="og:description" content="The complete openGym HTTP API as an OpenAPI spec: passkey auth, state sync, push notifications, pairing and admin routes.">
 <meta property="og:image" content="https://opengym.ch/img/social.jpg">
@@ -504,7 +503,6 @@ const html = `<!DOCTYPE html>
 <link rel="stylesheet" href="styles.css?v=${assetVersion}">
 <script>document.documentElement.className += ' js'</script>
 <!-- Umami web analytics for opengym.ch (self-hosted, cookieless). -->
-<script defer src="https://stats.duarte-santos.ch/script.js" data-website-id="db36019e-50f4-453c-9c56-d0588aefe233"></script>
 <style>${css}</style>
 </head>
 <body class="topnav dock">
@@ -618,7 +616,7 @@ ${schemaCards}
 </main>
 
 <footer><div class="wrap foot">
-  <span class="c">openGym · AGPL-3.0 · © 2026 <a href="https://duarte-santos.ch" rel="noopener">Duarte Santos</a></span>
+  <span class="c">openGym · AGPL-3.0 · © 2026 <a href="https://github.com/NgocTriTruong/openGym" rel="noopener">NgocTriTruong</a></span>
   <div class="links">
     <a href="docs.html">Docs</a>
     <a href="about.html">About</a>

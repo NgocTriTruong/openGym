@@ -273,5 +273,5 @@ release.
 An issue sits in at most one milestone. Whatever is not merged and tested on gym-test by release
 day rolls into the next one; the release does not wait for it. Pull requests from returning
 contributors get their pipeline started automatically; a first PR is started by hand after a look
-at the diff. Anything in review is on gym-test.duarte-santos.ch. Releases bundle whatever has
+at the diff. Anything in review is on gym-test.github.com/NgocTriTruong/openGym. Releases bundle whatever has
 passed that test, with a thank-you per contributor in the changelog.

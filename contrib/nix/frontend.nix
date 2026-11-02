@@ -47,7 +47,7 @@ buildNpmPackage rec {
 
   meta = with lib; {
     description = "openGym frontend — self-hosted gym & body-weight tracker PWA";
-    homepage = "https://gitlab.com/DuarteSantos8/opengym";
+    homepage = "https://gitlab.com/NgocTriTruong/openGym";
     license = licenses.agpl3Plus;
     platforms = nodejs.meta.platforms;
   };

@@ -42,7 +42,7 @@ buildNpmPackage rec {
 
   meta = with lib; {
     description = "openGym API — passkey auth + per-user workout data (Node.js)";
-    homepage = "https://gitlab.com/DuarteSantos8/opengym";
+    homepage = "https://gitlab.com/NgocTriTruong/openGym";
     license = licenses.agpl3Plus;
     platforms = nodejs.meta.platforms;
   };
